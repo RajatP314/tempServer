@@ -1,5 +1,5 @@
 {
-  "name": "temp server",
+  "name": "temp_server",
   "version": "0.0.1",
   "description": "use for basic server functionality",
   "main": "index.js",
