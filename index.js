@@ -19,6 +19,14 @@ io.on('connection', (socket)=>{
 		console.log('pressed');
 		io.emit('keypress', letter);
 	});
+	socket.on('keydown', (letter)=>{
+		console.log('pressed');
+		io.emit('keydown', letter);
+	});
+	socket.on('keyup', (letter)=>{
+		console.log('pressed');
+		io.emit('keyup', letter);
+	});
 });
 
 http.listen( (process.env.PORT || 8080), ()=>{
